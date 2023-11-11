@@ -1,0 +1,46 @@
+diferencias entre el ancular v16 less y angular v17
+
+1. YA NO SE UTILIZAN MODULOS (desaparecen de los ficheros)
+2. El comunModule que encierra a los NgFor, NgSwitch y demas no hay que importarlo
+3. la sintaxis y manera de utiliar los For, if, switch cambian por completo
+
+---
+
+para instalar bootstrap
+
+1. se instalan estas dependencias "npm i bootstrap jquery @popperjs/core"
+2. se ingresa al fichero"Angular.json" y se agregan las confuguraciones para que bootstrap funciones en "styles" y "script"
+3. en "styles" "node_modules/bootstrap/dist/css/bootstrap.min.css"
+4. en "script" "node_modules/bootstrap/dist/js/bootstrap.min.js",
+   "node_modules/jquery/dist/jquery.min.js",
+   "node_modules/@popperjs/core/dist/umd/popper.min.js"
+
+5. Listo para utilzar Bootstrap
+
+---
+
+para enrutar componente Home desde el app.component angular V17
+
+1. Creas el componente Home
+2. se ingresa al app.component.ts y en inport, importas el componente Home
+3. vas a app.component.html y pones la etiqueta del componente home
+
+---
+
+para tener el programa mas organizado se crean patch en en tsconfig.json
+
+"baseUrl": "./",
+"paths": {
+"@app/_":["src/app/_"],
+"@shared/_":["src/app/shared/_"],
+"@products/_":["src/app/components/pages/products/_"],
+"@pages/_":["src/app/components/pages/_"],
+}
+
+---
+
+creaciones de componentes
+
+1. para este proyecto empezamos a crear el componente de header dentro de la carpeta "sheared"
+2. creamos itro componente que se llame formSearch para el formulario de busqueda
+   ng g c shared/components/formSearch

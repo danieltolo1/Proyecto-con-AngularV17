@@ -1,0 +1,19 @@
+<div>
+  <h2>prueba de la api consumida</h2>
+  <div class="containerDiv">
+
+    @for (data of data; track data.id) {
+    <div class="card" style="width: 18rem;">
+      <img src={{data.image}} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ data.title }}</h5>
+        <p class="card-text">{{data.description}}</p>
+        <a href="#" class="btn btn-primary">Compra Aca</a>
+      </div>
+    </div>
+    } @empty {
+    <li> There are no items. </li>
+    }
+
+
+  </div>

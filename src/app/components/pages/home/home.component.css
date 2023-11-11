@@ -1,0 +1,13 @@
+.containerDiv {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2%;
+  margin-right: 2%;
+  justify-content: center;
+}
+
+.card {
+
+  margin-top: 10px !important;
+  margin-left: 20px !important;
+}
